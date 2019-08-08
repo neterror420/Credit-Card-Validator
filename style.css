@@ -1,0 +1,118 @@
+/* Coded by NetError */ 
+/* https://neterror.pw/ 
+https://github.com/neterror420
+https://github.com/neterror420/Credit-Card-Validator
+*/
+
+body, html {
+  height:100%;
+   margin: 0;
+  padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cc{
+  background: url('./img/cards.png') 4px 4px no-repeat;
+  top:50%; 
+  display:block;
+  border-radius:.2em;border:1px solid #ddd;
+  transition:background-color 500ms;
+  width:11.15em;
+  box-shadow:.07em .07em .1em rgba(50,50,50,.08) inset;
+  outline:none;
+  transition:border 500ms;
+  font-size:2em; 
+  padding:.3em;
+  padding-left:3em;
+  margin:-1em auto 0;
+  position:relative; 
+  transition:box-shadow 500ms;
+  transition:color 600ms;
+
+  position:relative;
+}
+.cc:focus {
+  box-shadow:.05em .05em .25em rgba(50,50,50,.25) inset;
+  border:1px solid #e3e3e3;
+}
+.cc.error {
+  border-color: rgb(255, 100, 100);
+  box-shadow: .05em .05em .25em rgba(170, 117, 117, .5) inset;
+  background-color: rgba(255, 100, 100, .08);
+  color: rgb(90, 0, 0);
+}
+.cc.verified {
+  border-color:rgb(152, 199, 152);
+  box-shadow:.05em .05em .25em rgba(0,50,0,.3) inset;
+}
+
+.cc.amex {background-position:4px -96px;}
+.cc.discover {background-position:4px -196px;}
+.cc.visa {background-position:4px -396px;}
+.cc.mastercard {background-position:4px -296px;}
+
+
+.h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top:  30%;
+  width: 100%;
+  font-size: 33px;
+} 
+  
+.h2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 37%;
+  width: 100%;
+  font-size: 17px;
+}
+
+.card-checker {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  font-size: 17px;
+
+}
+
+*{padding:0;margin:0;}
+#nav {
+  width: 100%;
+  height:auto;
+  display:block;
+}
+#nav > ul {
+  list-style: none;
+  display: flex;
+}
+#nav > ul > li {
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #000000;  
+}
+#nav > ul > li:hover {
+  color: #03adfc;
+  cursor: pointer;
+}
+
+.footer {
+font-family: 'Roboto', sans-serif;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
